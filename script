@@ -61,7 +61,7 @@ _G.FishItConfig = _G.FishItConfig or {
     },
     ["WebHook"] = {
         ["Link Webhook"] = "https://discord.com/api/webhooks/1446592021962821714/z65y7fZwAH0xuXF8wm0MtLCAcnZ7lKis6NQgGmA2oKUnlAXbiFM_HbPF9Ht4aYJhiGgB",
-        ["Auto Sending"] = true,
+        ["Auto Sending"] = false,
         ["Category"] = {"Secret"},
 
         ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1446592101667180655/alH4n4lgvDoKA0ky_bA5xr3g3m9mZfmp3zG-_QtlOIKPlIaW6As3YbFUnOSz5rBvPAqg",
