@@ -2,11 +2,16 @@ getgenv().GAG2Config = {
     AUTO_UPDATE_RESTART = true,
 
     BUY_PET = {  -- ["Pet Name"] = Amount
-        ["Black Dragon"] = 99, 
-        ["Golden Dragonfly"] = 99, 
+        ["Monkey"] = 99, 
+        ["Bee"] = 99, 
+        ["BlackDragon"] = 99, 
+        ["GoldenDragonfly"] = 99, 
         ["Unicorn"] = 99, 
         ["Raccoon"] = 99, 
-        ["Ice Serpent"] = 99,
+        ["IceSerpent"] = 99,
+
+        ["Robin"] = 5,
+        ["Deer"] = 5,
     },
 
     EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
@@ -17,18 +22,18 @@ getgenv().GAG2Config = {
     },
 
     PLANT_SEED = {  -- ["Seed Name"] = Amount
-        ["Carrot"] = 10, 
+        ["Carrot"] = 50, 
         ["Strawberry"] = 4,
         ["Blueberry"] = 4,
-        ["Tulip"] = 4,
+        ["Tulip"] = 50,
         ["Tomato"] = 4,
         ["Apple"] = 4,
-        ["Bamboo"] = 50,
+        ["Bamboo"] = 200,
         ["Corn"] = 4,
         ["Cactus"] = 4,
         ["Pineapple"] = 4,
-        ["Mushroom"] = 50,
-        ["Green Bean"] = 50,
+        ["Mushroom"] = 200,
+        ["Green Bean"] = 200,
         ["Banana"] = 50,
         ["Grape"] = 50,
         ["Coconut"] = 50,
@@ -42,8 +47,6 @@ getgenv().GAG2Config = {
         ["Poison Apple"] = 50,
         ["Moon Bloom"] = 50,
         ["Dragon's Breath"] = 50,
-        ["Rainbow"] = 5,
-        ["Gold"] = 15,
     },
 
     BUY_SEED = {  -- ["Seed Name"] = Amount
@@ -74,14 +77,18 @@ getgenv().GAG2Config = {
         ["Dragon's Breath"] = 500,
     },
 
+    COLLECT_PLANT_IF_MUTATED = { "Bamboo", "Mushroom", "Green Bean" },  -- Only collect fruit when have ANY mutation
+    FAVOURITE_FRUIT = {},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
+
     SELL_ALL_DELAY = 20,
-    EXPAND_PLOT = false,
-    BUY_GEAR = {["Common Watering Can"] = 2, ["Common Sprinkler"] = 2,},  -- ["Gear Name"] = Amount
+    FOCUS_RAINBOW_GOLD_SEED = true,  -- set true if public server (instant collect), false for slightly slower collect
+    EXPAND_PLOT = true,
+    BUY_GEAR = {["Common Watering Can"] = 2, ["Common Sprinkler"] = 2 },  -- ["Gear Name"] = Amount
     BUY_CRATE = {},  -- ["Crate Name"] = Amount
     USE_SPRINKLER = {"Common Sprinkler"},  -- "Sprinkler Name"
 
     -- Auto Mail
-    AUTO_MAIL_USERNAME = {"mancingcan"},  -- Username (Randomized)
+    AUTO_MAIL_USERNAME = {"mancingcan"},  -- "Username" (Randomized)
     AUTO_MAIL_ITEM_NAME = { ["Rainbow"] = 1,  ["Gold"] = 1, ["Monkey"] = 1, ["Bee"] = 1, ["Black Dragon"] = 1, ["Golden Dragonfly"] = 1, ["Unicorn"] = 1, ["Raccoon"] = 1, ["Ice Serpent"] = 1,  ["Venus Fly Trap"] = 1, ["Pomegranate"] = 1, ["Poison Apple"] = 1, ["Moon Bloom"] = 1, ["Dragon's Breath"] = 1, },  -- ["Item Name"] = Amount
     COLLECT_MAIL = true,
 
@@ -90,8 +97,10 @@ getgenv().GAG2Config = {
     WEBHOOK_PET_RARITY = { "Mythic", "Super", "Secret" },
     WEBHOOK_URL = "https://discord.com/api/webhooks/1516454062076465394/VUjDF0S2RaiTIVN_sdmLp7Ifq4_9841niMvgNhvUQxEEscRXJbV9qjFwcDw_P_UFntSp",
     DISCORD_ID = "1107682747658551307",
-    WEBHOOK_NOTE = "gag2",  -- Private Webhook
+    WEBHOOK_NOTE = "gg",  -- Private Webhook
     SHOW_PUBLIC_DISCORD_ID = false,
     SHOW_WEBHOOK_USERNAME = true,  -- Private Webhook
     SHOW_WEBHOOK_JOBID = true,  -- Private Webhook
 }
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/c9ea3aa6c782de82dee4bcf6b9a9d03e.lua"))()
