@@ -42,7 +42,7 @@ getgenv().GAG2Config = {
         ["Venus Fly Trap"] = 0,
         ["Pomegranate"] = 100,
         ["Poison Apple"] = 100,
-		["Venom Spitter"] = 0,
+	["Venom Spitter"] = 0,
         ["Moon Bloom"] = 0,
         ["Dragon's Breath"] = 0,
     },
