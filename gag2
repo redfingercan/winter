@@ -80,9 +80,6 @@ getgenv().GAG2Config = {
     BUY_GEAR_MIN_SHECKLE = 1000000, 
     BUY_GEAR = { 
 	["Super Watering Can"] = 9999,
-    	["Legendary Sprinkler"] = 1,
-	["Common Watering Can"] = 1,
-	["Common Sprinkler"] = 1,
     },  
     
     -- Sell Config
