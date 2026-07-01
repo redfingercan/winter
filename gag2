@@ -36,12 +36,12 @@ getgenv().GAG2Config = {
         ["Acorn"] = 10,
         ["Cherry"] = 10,
         ["Sunflower"] = 10,
-        ["Venus Fly Trap"] = 0,
+        ["Venus Fly Trap"] = 10,
         ["Pomegranate"] = 10,
         ["Poison Apple"] = 10,
-        ["Venom Spitter"] = 0,
-        ["Moon Bloom"] = 0,
-		["Hypno Bloom"] = 0,
+        ["Venom Spitter"] = 10,
+        ["Moon Bloom"] = 10,
+		["Hypno Bloom"] = 10,
         ["Dragon's Breath"] = 0,
     },
 
@@ -67,12 +67,12 @@ getgenv().GAG2Config = {
         ["Acorn"] = 3,
         ["Cherry"] = 1,
         ["Sunflower"] = 1,
-        ["Venus Fly Trap"] = 500,
+        ["Venus Fly Trap"] = 1,
         ["Pomegranate"] = 1,
         ["Poison Apple"] = 1,
-        ["Venom Spitter"] = 500,
-        ["Moon Bloom"] = 500,
-        ["Hypno Bloom"] = 500,
+        ["Venom Spitter"] = 1,
+        ["Moon Bloom"] = 1,
+        ["Hypno Bloom"] = 1,
         ["Dragon's Breath"] = 9999,
     },
     BUY_AUCTION = {},  -- ["Item Name"] = { Max Sheckle Price, Buy Until Amount }
@@ -81,7 +81,6 @@ getgenv().GAG2Config = {
     BUY_GEAR = { 
 	["Super Watering Can"] = 9999,
     	["Legendary Sprinkler"] = 1,
-    	["Super Sprinkler"] = 9999,
 	["Common Watering Can"] = 1,
 	["Common Sprinkler"] = 1,
     },  
@@ -92,10 +91,8 @@ getgenv().GAG2Config = {
     SELL_ALL_DELAY = 20,  -- Seconds  
 
     -- Consumable Config
-    USE_SPRINKLER = {
-	["Common Sprinkler"] = 1,
-    	["Legendary Sprinkler"] = 1,},  -- "Sprinkler Name" (1 active sprinkler at a time)
-    USE_WATERING_CAN = {["Common Watering Can"] = 1,},  -- "Watering Can Name" 
+    USE_SPRINKLER = {},  -- "Sprinkler Name" (1 active sprinkler at a time)
+    USE_WATERING_CAN = {},  -- "Watering Can Name" 
     USE_WATERING_CAN_DELAY = 60,  -- Seconds
 
     -- Misc Config
@@ -115,11 +112,6 @@ getgenv().GAG2Config = {
         ["BlackDragon"] = "All",
         ["Raccoon"] = "All",
         ["IceSerpent"] = "All",
-        ["Venus Fly Trap"] = "All",
-        ["Pomegranate"] = "All",
-        ["Venom Spitter"] = "All",
-        ["Moon Bloom"] = "All",
-		["Hypno Bloom"] = "All",
         ["Dragon's Breath"] = "All",
         ["Super Sprinkler"] = "All",
         ["Super Watering Can"] = "All",
