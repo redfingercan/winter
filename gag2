@@ -16,7 +16,7 @@ getgenv().GAG2Config = {
 
     -- Planting Config
     PLANT_SEED = {  -- ["Seed Name"] = Plant Until Amount
-        ["Carrot"] = 4, 
+        ["Carrot"] = 0, 
         ["Strawberry"] = 4,
         ["Blueberry"] = 4,
         ["Tulip"] = 4,
@@ -47,7 +47,7 @@ getgenv().GAG2Config = {
 
     -- Buying Config
     BUY_SEED = {  -- ["Seed Name"] = Buy Until Amount
-        ["Carrot"] = 5, 
+        ["Carrot"] = 999, 
         ["Strawberry"] = 5,
         ["Blueberry"] = 5,
         ["Tulip"] = 5,
@@ -104,6 +104,7 @@ getgenv().GAG2Config = {
 	["Mega"] = "All",
         ["Gold"] = "All",
         ["Rainbow"] = "All",
+		["Carrot"] = "All",
         ["Monkey"] = "All",
         ["Bee"] = "All",
         ["BlackDragon"] = "All",
